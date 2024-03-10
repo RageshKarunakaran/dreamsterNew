@@ -1,6 +1,5 @@
 .dream_main{
   max-width: 500px;
-  width: 100%;
   margin: 0 auto;
   background: #000;
   height: auto;
@@ -48,6 +47,7 @@
 .desc p{
   font-size: 22px;
   line-height: 1.6;
+  margin: 0;
 }
 .desc p span{
   font-weight: bold;
