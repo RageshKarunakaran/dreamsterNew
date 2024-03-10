@@ -1,5 +1,6 @@
 .dream_main{
-  width: 500px;
+  max-width: 500px;
+  width: 100%;
   margin: 0 auto;
   background: #000;
   height: auto;
@@ -11,7 +12,7 @@
 .main_bg {
   background-image: url(../public/bg.png);
   background-position: center;
-  background-size: auto;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 .dream_main::before {
@@ -47,6 +48,7 @@
 }
 .desc p{
   font-size: 22px;
+  line-height: 1.6;
 }
 .desc p span{
   font-weight: bold;
@@ -149,6 +151,21 @@ label {
   gap: 1rem;
   margin: 2rem 0rem;
 }
+.flex img {
+  width: 25px;
+  height: 25px;
+  filter: brightness(0.5) invert(1);
+}
+.flex.icon div{
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(45deg, #ff00d5, #0082ff);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 1px solid #fff;
+}
 .range {
   border: 0.5px solid #fc5aff8a;
   width: 100%;
@@ -170,4 +187,39 @@ label {
   top: 0;
   bottom: 0;
   transform: translateX(-20px);
+}
+.desc h2 span{
+  color: #ff00d5;
+}
+.link {
+  text-align: center;
+}
+.link a{
+  color: #0082ff;
+}
+.soldout h2{
+  text-align: center;
+  line-height: 1.6;
+}
+span.sold {
+  color: red;
+}
+.annonce {
+  text-align: center;
+}
+/* media Query */
+
+@media only screen and (max-width: 400px) {
+  .dream_main{
+    padding: 20px;
+  }
+  .desc p{
+    font-size: 18px;
+  }
+  ul.switch li p{
+    font-size: 12px;
+  }
+  label{
+    font-size: 18px;
+  }
 }
