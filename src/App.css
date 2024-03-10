@@ -7,7 +7,6 @@
   padding: 48px;
   color: #fff;
   position: relative;
-  overflow: auto;
 }
 .main_bg {
   background-image: url(../public/bg.png);
